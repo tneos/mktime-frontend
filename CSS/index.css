@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.josefin-slab-thin {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+
+.navbar {
+  position: relative;
+  height: 15vh;
+}
+
+.logo {
+  width: 16rem;
+  height: 12rem;
+  padding-top: 2rem;
+}
+.icons {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  top: 16%;
+  right: 0%;
+
+  @media only screen and (max-width: 992px) {
+    top: 75%;
+    right: 10%;
+  }
+  @media only screen and (max-width: 564px) {
+    top: 75%;
+    right: 15%;
+  }
+}
+.icon {
+  width: 1rem;
+}

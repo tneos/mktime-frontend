@@ -14,48 +14,145 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!--CSS-->
         <link rel="stylesheet" href="CSS/index.css">
     </head>
     <body>
         <div class="container">
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <img src="images/logo.png" alt="logo" class="logo">
-                    <button
-                        class="navbar-toggler ms-auto"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active josefin-slab-thin" aria-current="page" href="#">Our watches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link josefin-slab-thin" href="#">Smart Watches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link josefin-slab-thin" href="#">Analog</a>
-                            </li>
-                        </ul>
+            <div class="row navbar-row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid logo" src="images/logo.png" alt="logo">
+                        </a>
+                        <button
+                            class="navbar-burger navbar-toggler p-2 rounded-1 border-0 bg-light"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarText"
+                            aria-controls="navbarText"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewbox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M3 12H21"
+                                    stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M3 6H21"
+                                    stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                                <path
+                                    d="M3 18H21"
+                                    stroke="black"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="navbar-collapse collapse" id="navbarText" style="height: 193px;">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link josefin-slab-thin" aria-current="page" href="#">Our Watches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link josefin-slab-thin" aria-current="page" href="#">Smart Watches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link josefin-slab-thin" aria-current="page" href="#">Analog</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-around position-relative icons">
+                                <img
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#userText"
+                                    type="button"
+                                    aria-expanded="false"
+                                    aria-controls="userText"
+                                    src="images/person.svg"
+                                    alt="person"
+                                >
+                                <img src="images/basket.svg" alt="basket">
+                                <div class="collapse position-absolute top-100 start-0 user" id="userText">
+                                    <a class="btn btn-sm josefin-slab-thin user-info" href="#">Sign In</a>
+                                    <a class="btn btn-sm josefin-slab-thin user-info" href="#">Create an account</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--Products-->
+            <div class="row mt-5">
+                <h1 class="montserrat-300">Our Products</h1>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card my-5" style="height: 80vh;">
+                        <img
+                            class="card-img-top"
+                            src="images/analog-1.jpg"
+                            alt="analog-1"
+                        >
+                        <div class="card-body">
+                            <h5 class="card-title montserrat-300">Uhrgebiet</h5>
+                            <p class="card-text h-50 montserrat-300">Men´s Watch Hybromatic Magnifying Glass Steel Black.</p>
+                            <a href="#" class="btn btn-light montserrat-300">See more</a>
+                        </div>
                     </div>
                 </div>
-                <div class="icons">
-                    <img src="images/person.svg" class="icon" alt="user">
-                    <img src="images/basket.svg" class="icon" alt="basket">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card my-5" style="height: 80vh;">
+                        <img
+                            class="card-img-top"
+                            src="images/analog-2.jpg"
+                            alt="analog-2"
+                        >
+                        <div class="card-body">
+                            <h5 class="card-title montserrat-300">Michael Kors</h5>
+                            <p class="card-text h-50 montserrat-300">Oversized Lexington Silver-Tone Watch.</p>
+                            <a href="#" class="btn btn-light card-button card-button montserrat-300">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card my-5" style="height: 80vh;">
+                        <img class="card-img-top" src="images/analog3.jpg" alt="analog-3">
+                        <div class="card-body">
+                            <h5 class="card-title montserrat-300">Raymond Weil</h5>
+                            <p class="card-text h-50 montserrat-300">An entirely mechanical collection, Maestro boasts authenticity and watchmaking know-how. .</p>
+                            <a href="#" class="btn btn-light card-button montserrat-300">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card my-5" style="height: 80vh;">
+                        <img class="card-img-top" src="images/analog4.jpg" alt="analog-4">
+                        <div class="card-body">
+                            <h5 class="card-title montserrat-300">Edifice</h5>
+                            <p class="card-text h-50 montserrat-300">Casio Edifice Classic EFV-C120D-2AEF Ana-Digi Chronograph Watch.</p>
+                            <a href="#" class="btn btn-light card-button montserrat-300">See more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

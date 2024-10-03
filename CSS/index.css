@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* Fonts */
 .josefin-slab-thin {
   font-family: "Josefin Slab", serif;
   font-optical-sizing: auto;
@@ -16,12 +18,19 @@
   font-style: normal;
 }
 
+/* Navbar */
+
 .navbar {
   position: relative;
   height: 15vh;
 }
+
+.nav-item {
+  margin-right: 2rem;
+}
+
 .navbar-row {
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 992px) {
     height: 80vh;
   }
 }
@@ -48,11 +57,16 @@
   font-size: 1rem;
   align-self: flex-start;
 }
+
+/* Cards */
 .card-img-top {
   object-fit: cover;
 }
 .card-title {
   font-size: 1.4rem;
+}
+.card-img-top {
+  height: 50%;
 }
 .card-text,
 .card-button {
